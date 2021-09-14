@@ -33,9 +33,6 @@ def get_runtime_info():
             if "version" in data:
                 ret["version"] = data["version"]
 
-    with open("/home/ec2-user/resource-domain.txt") as f:
-         ret["resource-domain"] = f.readline().strip()
-
     if ret["argv0"] == ret["argv0"]:
         del ret["argv0_abs"]
 
