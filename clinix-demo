@@ -11,5 +11,5 @@ rinfo = get_runtime_info()
 keylen = max(map(len, rinfo.keys()))
 
 for k, v in sorted(get_runtime_info().items()):
-    print("%-*s %s" % (keylen + 1, k + ":", colored(v, 'green')))
+    print("%-*s %s" % (keylen + 1, k + ":", colored(v, 'red')))
 
